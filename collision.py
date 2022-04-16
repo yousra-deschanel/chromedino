@@ -37,7 +37,8 @@ while True:
     screen.blit(enemy_surface,enemy_rect)
 
     if player_rect.colliderect(enemy_rect):
-        print('collision')
+        pygame.quit()
+        exit()
     
     pygame.display.update()
     clock.tick(60)

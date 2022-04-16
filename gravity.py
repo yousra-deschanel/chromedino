@@ -62,6 +62,10 @@ while True:
     #player
     player_gravity += 1
     player_rect.y += player_gravity
+
+    if player_rect.bottom >= 370:
+        player_rect.bottom = 370
+        
     screen.blit(player_surf, player_rect)
 
 
